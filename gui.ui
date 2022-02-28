@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>TQ</class>
+ <widget class="QWidget" name="TQ">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -128,7 +128,6 @@ border-bottom-right-radius: 50px;</string>
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
-     <italic>true</italic>
     </font>
    </property>
    <property name="autoFillBackground">
@@ -141,7 +140,11 @@ padding: 6px;
 border: none;
 margin-top: 1px;
 margin-right: 16px;
-font-size: 10px;</string>
+font-size: 10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;</string>
    </property>
    <property name="placeholderText">
     <string>                         OIB</string>
@@ -364,6 +367,39 @@ color:white
    </property>
    <property name="text">
     <string>Get Employment Contract</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>250</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">borders: none</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>off2.jpg</normaloff>
+     <normalon>off.jpg</normalon>off2.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
    </property>
   </widget>
  </widget>

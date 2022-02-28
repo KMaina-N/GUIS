@@ -11,12 +11,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys, res
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(1201, 399)
-        Form.setStyleSheet("backgrpund-color:rgb(255, 170, 255)")
-        self.widget = QtWidgets.QWidget(Form)
+class Ui_TQ(object):
+    def setupUi(self, TQ):
+        TQ.setObjectName("TQ")
+        TQ.resize(1201, 399)
+        TQ.setStyleSheet("backgrpund-color:rgb(255, 170, 255)")
+        self.widget = QtWidgets.QWidget(TQ)
         self.widget.setGeometry(QtCore.QRect(0, 0, 1201, 51))
         self.widget.setStyleSheet("background-color:rgb(0, 85, 255);\n"
 "border-bottom-left-radius: 50px;\n"
@@ -33,35 +33,34 @@ class Ui_Form(object):
         self.label.setFont(font)
         self.label.setStyleSheet("color:rgb(255, 255, 255)")
         self.label.setObjectName("label")
-        self.widget_2 = QtWidgets.QWidget(Form)
+        self.widget_2 = QtWidgets.QWidget(TQ)
         self.widget_2.setGeometry(QtCore.QRect(20, 70, 201, 201))
         self.widget_2.setStyleSheet("border-top-left-radius: 50px;\n"
 "border-bottom-right-radius: 50px;\n"
 "border-image: url(:/images/biz.jpg);")
         self.widget_2.setObjectName("widget_2")
-        self.widget_5 = QtWidgets.QWidget(Form)
+        self.widget_5 = QtWidgets.QWidget(TQ)
         self.widget_5.setGeometry(QtCore.QRect(260, 70, 201, 201))
         self.widget_5.setStyleSheet("border-top-left-radius: 50px;\n"
 "border-bottom-right-radius: 50px;\n"
 "border-image: url(:/images/image1.jpg);")
         self.widget_5.setObjectName("widget_5")
-        self.widget_6 = QtWidgets.QWidget(Form)
+        self.widget_6 = QtWidgets.QWidget(TQ)
         self.widget_6.setGeometry(QtCore.QRect(500, 70, 201, 201))
         self.widget_6.setStyleSheet("border-image: url(:/images/sign.jpg);\n"
 "border-top-left-radius: 50px;\n"
 "border-bottom-right-radius: 50px;")
         self.widget_6.setObjectName("widget_6")
-        self.widget_7 = QtWidgets.QWidget(Form)
+        self.widget_7 = QtWidgets.QWidget(TQ)
         self.widget_7.setGeometry(QtCore.QRect(740, 70, 201, 201))
         self.widget_7.setStyleSheet("border-image: url(:/images/image2.jpg);\n"
 "border-top-left-radius: 50px;\n"
 "border-bottom-right-radius: 50px;")
         self.widget_7.setObjectName("widget_7")
-        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit = QtWidgets.QLineEdit(TQ)
         self.lineEdit.setGeometry(QtCore.QRect(980, 100, 201, 31))
         font = QtGui.QFont()
         font.setPointSize(-1)
-        font.setItalic(True)
         self.lineEdit.setFont(font)
         self.lineEdit.setAutoFillBackground(False)
         self.lineEdit.setStyleSheet("border: 1px solid #ccc;\n"
@@ -70,10 +69,14 @@ class Ui_Form(object):
 "border: none;\n"
 "margin-top: 1px;\n"
 "margin-right: 16px;\n"
-"font-size: 10px;")
+"font-size: 10px;\n"
+"border-top-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-bottom-right-radius:10px;")
         self.lineEdit.setClearButtonEnabled(False)
         self.lineEdit.setObjectName("lineEdit")
-        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton = QtWidgets.QPushButton(TQ)
         self.pushButton.setGeometry(QtCore.QRect(990, 170, 171, 61))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -90,29 +93,29 @@ class Ui_Form(object):
 "background-color: #03dbfc\n"
 "")
         self.pushButton.setObjectName("pushButton")
-        self.Name = QtWidgets.QLabel(Form)
+        self.Name = QtWidgets.QLabel(TQ)
         self.Name.setGeometry(QtCore.QRect(40, 340, 41, 31))
         self.Name.setStyleSheet(" font-size: 12px;\n"
 " text-transform: uppercase;")
         self.Name.setObjectName("Name")
-        self.Name_disp = QtWidgets.QLabel(Form)
+        self.Name_disp = QtWidgets.QLabel(TQ)
         self.Name_disp.setGeometry(QtCore.QRect(80, 340, 271, 31))
         self.Name_disp.setStyleSheet(" font-size: 12px;\n"
 " text-transform: uppercase;")
         self.Name_disp.setText("")
         self.Name_disp.setObjectName("Name_disp")
-        self.address = QtWidgets.QLabel(Form)
+        self.address = QtWidgets.QLabel(TQ)
         self.address.setGeometry(QtCore.QRect(470, 340, 61, 31))
         self.address.setStyleSheet(" font-size: 12px;\n"
 " text-transform: uppercase;")
         self.address.setObjectName("address")
-        self.address_disp = QtWidgets.QLabel(Form)
+        self.address_disp = QtWidgets.QLabel(TQ)
         self.address_disp.setGeometry(QtCore.QRect(540, 340, 401, 31))
         self.address_disp.setStyleSheet(" font-size: 12px;\n"
 " text-transform: uppercase;")
         self.address_disp.setText("")
         self.address_disp.setObjectName("address_disp")
-        self.pushButton_2 = QtWidgets.QPushButton(Form)
+        self.pushButton_2 = QtWidgets.QPushButton(TQ)
         self.pushButton_2.setGeometry(QtCore.QRect(20, 280, 201, 51))
         font = QtGui.QFont()
         font.setBold(True)
@@ -127,7 +130,7 @@ class Ui_Form(object):
 "color:white\n"
 "")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(Form)
+        self.pushButton_3 = QtWidgets.QPushButton(TQ)
         self.pushButton_3.setGeometry(QtCore.QRect(260, 280, 201, 51))
         font = QtGui.QFont()
         font.setBold(True)
@@ -142,7 +145,7 @@ class Ui_Form(object):
 "color:white\n"
 "")
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(Form)
+        self.pushButton_4 = QtWidgets.QPushButton(TQ)
         self.pushButton_4.setGeometry(QtCore.QRect(500, 280, 201, 51))
         self.pushButton_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_4.setStyleSheet("border-top-left-radius:25px;\n"
@@ -153,7 +156,7 @@ class Ui_Form(object):
 "color:white\n"
 "")
         self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_5 = QtWidgets.QPushButton(Form)
+        self.pushButton_5 = QtWidgets.QPushButton(TQ)
         self.pushButton_5.setGeometry(QtCore.QRect(740, 280, 201, 51))
         self.pushButton_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_5.setStyleSheet("border-top-left-radius:25px;\n"
@@ -164,27 +167,50 @@ class Ui_Form(object):
 "color:white\n"
 "")
         self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton_6 = QtWidgets.QPushButton(TQ)
+        self.pushButton_6.setGeometry(QtCore.QRect(1040, 250, 81, 71))
+        self.pushButton_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_6.setAutoFillBackground(True)
+        self.pushButton_6.setStyleSheet("borders: none")
+        self.pushButton_6.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("off2.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("off.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        self.pushButton_6.setIcon(icon)
+        self.pushButton_6.setIconSize(QtCore.QSize(80, 80))
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.exit = QAction("Exit Application", triggered=lambda: self.exit_app)
+        self.addAction(self.exit)
+    def exit_app(self):
+        self.close
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(TQ)
+        QtCore.QMetaObject.connectSlotsByName(TQ)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, TQ):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "TOKIĆ"))
-        self.lineEdit.setPlaceholderText(_translate("Form", "                         OIB"))
-        self.pushButton.setText(_translate("Form", "Get Info"))
-        self.Name.setText(_translate("Form", "Name:"))
-        self.address.setText(_translate("Form", "ADDRESS:"))
-        self.pushButton_2.setText(_translate("Form", "Get Patnership agreement"))
-        self.pushButton_3.setText(_translate("Form", "Get Nondisclosure agreement"))
-        self.pushButton_4.setText(_translate("Form", "Get Indemnity agreement"))
-        self.pushButton_5.setText(_translate("Form", "Get Employment Contract"))
+        TQ.setWindowTitle(_translate("TQ", "Form"))
+        self.label.setText(_translate("TQ", "TOKIĆ"))
+        self.lineEdit.setPlaceholderText(_translate("TQ", "                         OIB"))
+        self.pushButton.setText(_translate("TQ", "Get Info"))
+        self.Name.setText(_translate("TQ", "Name:"))
+        self.address.setText(_translate("TQ", "ADDRESS:"))
+        self.pushButton_2.setText(_translate("TQ", "Get Patnership agreement"))
+        self.pushButton_3.setText(_translate("TQ", "Get Nondisclosure agreement"))
+        self.pushButton_4.setText(_translate("TQ", "Get Indemnity agreement"))
+        self.pushButton_5.setText(_translate("TQ", "Get Employment Contract"))
 
-if __name__=='__main__':
-    app=QtWidgets.QApplication(sys.argv)
-    Form=QtWidgets.QWidget()
-    ui=Ui_Form()
+    def clicking(self):
+        newtext = self.Name_disp.setText('Text OK!')
+        newaddress=self.address_disp.setText('Test Ok!')
+        return newtext, newaddress
+
+
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_TQ()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())
